@@ -1,4 +1,4 @@
-# Docker image for certbot anf nginx
+# Docker image for certbot and nginx
 
 ## How to use
 ### You need set theese envs for image `tehnarenok/certbot`:
