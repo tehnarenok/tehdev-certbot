@@ -2,7 +2,7 @@ FROM alpine:latest AS system
 
 WORKDIR /app
 
-RUN apk add certbot
+RUN apk add certbot git
 
 ENV ACME_CHALLENGE "/app/acme-challenge/"
 
