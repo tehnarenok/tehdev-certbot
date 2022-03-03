@@ -6,9 +6,7 @@ RUN apk add certbot
 
 ENV ACME_CHALLENGE "/app/acme-challenge/"
 
-COPY mycertbot.sh /app/
-COPY crontab.txt /app/crontab.txt
-COPY main.sh /app/main.s
+COPY . .
 
 RUN mkdir ${ACME_CHALLENGE}
 RUN chmod 755 /app/mycertbot.sh
